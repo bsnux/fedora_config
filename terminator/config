@@ -1,0 +1,24 @@
+[global_config]
+[keybindings]
+  go_up = <Ctrl>Up
+  split_horiz = <Ctrl><Shift>H
+  go_down = <Ctrl>Down
+  split_vert = <Ctrl><Shift>B
+  go_right = <Ctrl>Right
+  go_left = <Ctrl>Left
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Monospace 10
+    background_color = "#300a24"
+    show_titlebar = False
+    foreground_color = "#ffffff"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
