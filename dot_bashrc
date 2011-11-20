@@ -3,6 +3,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 alias gst="git status"
 
+alias em="emacsclient -t"
+
 # Displaying git branch inside prompt
  function parse_git_branch {
    git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
