@@ -208,7 +208,13 @@ if test $UID -gt 0 -a -z "$VNCSESSION" -a "$screensaver_enabled" != "false"; the
 fi
 
 # bsnux configuration
+#---------------------
+
+# Keyboard conf. Due to a bug on XFCE 4, don't forget to execute:
+#    sudo yum install xfce4-xkb-plugin
 /usr/bin/setxkbmap -option ctrl:swapcaps,grp:shifts_toggle -layout "us,es" &
+
+# Launching Dropbox daemon
 /usr/bin/dropbox start &
 
 # Run xfce4-session if installed
