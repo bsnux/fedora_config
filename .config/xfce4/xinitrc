@@ -207,6 +207,9 @@ if test $UID -gt 0 -a -z "$VNCSESSION" -a "$screensaver_enabled" != "false"; the
     esac
 fi
 
+# bsnux configuration
+/usr/bin/setxkbmap -option ctrl:swapcaps,grp:shifts_toggle -layout "us,es" &
+/usr/bin/dropbox start &
 
 # Run xfce4-session if installed
 if which xfce4-session >/dev/null 2>&1; then
@@ -307,8 +310,3 @@ if test "$ssh_agent_kill_cmd"; then
 fi
 
 xsetroot -bg white -fg red  -solid black -cursor_name watch
-
-# bsnux configuration
-/usr/bin/setxkbmap -option "ctrl:swapcaps"
-/usr/bin/setxkbmap -layout "us,es"  -option "grp:rctrl_switch"
-dropbox &
