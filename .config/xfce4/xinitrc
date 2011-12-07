@@ -217,6 +217,9 @@ fi
 # Launching Dropbox daemon
 /usr/bin/dropbox start &
 
+# Kupfer
+/usr/local/bin/kupfer &
+
 # Run xfce4-session if installed
 if which xfce4-session >/dev/null 2>&1; then
     xfce4-session
