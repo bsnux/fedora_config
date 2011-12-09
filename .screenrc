@@ -7,9 +7,10 @@
 #
 # Detaching a session:     Ctrl + a, d
 # New shell:               Ctrl + a, c
-# Split window:            Ctrl + a, Split
+# Split window:            Ctrl + a, |
 # Toggling between shells: Ctrl + a, Ctrl + a
 # Renaming a window:       Ctrl + a, A
+# Killing current windows: Ctrl + a, w
 
 hardstatus on
 hardstatus alwayslastline
