@@ -1,8 +1,16 @@
 import XMonad
 import XMonad.Config.Xfce
- 
-main = xmonad xfceConfig
+import XMonad.Util.EZConfig
+
+main = do
+  xmonad $ xfceConfig
               { modMask = mod4Mask
               , borderWidth = 4
               , focusedBorderColor = "#7FBC71"
-               }
+              } `additionalKeysP` myKeys
+
+myKeys = [  (("M4-f"), spawn "firefox")
+           ,(("M4-e"), spawn "emacs")
+           ,(("M4-s"), spawn "xscreensaver-command --lock")
+           ,(("M4-x"), kill)
+         ]
