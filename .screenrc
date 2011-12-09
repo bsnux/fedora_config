@@ -1,0 +1,17 @@
+# Magic key:               Ctrl + a
+#
+# Being back to session:   screen -R
+# UTF-8 terminal:          screen -U
+# List sessions:           screen -list
+#
+#
+# Detaching a session:     Ctrl + a, d
+# New shell:               Ctrl + a, c
+# Split window:            Ctrl + a, Split
+# Toggling between shells: Ctrl + a, Ctrl + a
+# Renaming a window:       Ctrl + a, A
+
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y}%m/%d %C%a "
+screen -U
