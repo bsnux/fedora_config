@@ -18,7 +18,12 @@ hardstatus on
 hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y}%m/%d %C%a "
 
+defscrollback 5000
+
+termcapinfo xterm* ti@:te@
+
 vbell off
 
 # Redefining command key to Ctrl-o
 escape ^Oo
+
