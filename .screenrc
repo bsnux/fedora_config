@@ -12,7 +12,13 @@
 # Renaming a window:       Ctrl + a, A
 # Killing current windows: Ctrl + a, w
 
+startup_message off
+
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y}%m/%d %C%a "
-screen -U
+
+vbell off
+
+# Redefining command key to Ctrl-o
+escape ^Oo
