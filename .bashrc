@@ -2,8 +2,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 alias gst="git status"
-
+alias rr="python manage.py runserver"
 alias em="emacsclient -t"
+
 
 # Displaying git branch inside prompt
  function parse_git_branch {
