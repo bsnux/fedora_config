@@ -212,7 +212,7 @@ fi
 
 # Keyboard conf. Due to a bug on XFCE 4, don't forget to execute:
 #    sudo yum install xfce4-xkb-plugin
-/usr/bin/setxkbmap -option ctrl:swapcaps,grp:shifts_toggle -layout "us,es" &
+/usr/bin/setxkbmap -option ctrl:swapcaps -layout us -variant intl &
 
 # Launching Dropbox daemon
 /usr/bin/dropbox start &
