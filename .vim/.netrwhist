@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/arturo/dev/comunidad/apps/users/migrations'
+let g:netrw_dirhist_2='/home/arturo/.virtualenvs/mylocation/lib/python2.7/site-packages/relationships/migrations'
+let g:netrw_dirhist_3='/home/arturo/dev/extra/django-simple-friends/friends'
+let g:netrw_dirhist_4='/home/arturo/dev'
+let g:netrw_dirhist_5='/home/arturo/config_files/.config/autostart'
+let g:netrw_dirhist_6='/home/arturo/.config/Thunar'
+let g:netrw_dirhist_7='/home/arturo/config_files/.xmonad'
