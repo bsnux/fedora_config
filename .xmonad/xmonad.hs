@@ -7,6 +7,7 @@ main = do
               { modMask = mod4Mask
               , borderWidth = 4
               , focusedBorderColor = "#7FBC71"
+              , terminal = "urxvt"
               } `additionalKeysP` myKeys
 
 myKeys = [  (("M4-f"), spawn "firefox")
