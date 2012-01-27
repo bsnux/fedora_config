@@ -1,10 +1,45 @@
-# Aliases
-alias gst="git status"
-alias gco='git commit'
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+   . /etc/bashrc
+fi
+
+# MERCURIAL
+if [ -f $HOME/.hgtab-bash.sh ]; then
+    . $HOME/.hgtab-bash.sh
+fi
+
+# Django completion
+if [ -f $HOME/scripts/django_bash_completion.sh ]; then
+    $HOME/scripts/django_bash_completion.sh
+fi
+
+stty -ixoff -ixon
+
+# User specific aliases and functions
+alias ls='ls -h --color=auto'
+alias t='todo.sh -d /home/arturo/todo.cfg'
+
+# Git stuff
+alias gst='git status'
+alias gco='git commit -m'
+alias ga='git add'
+alias glog='git log'
 alias gdiff='git diff'
 alias git="git-achievements"
+
+# Emacs stuff
+alias ec='emacsclient --no-wait'
+alias em='emacsclient -t -nw'
+alias eg='emacs --geometry=120x64'
+
+# Django
 alias rr="python manage.py runserver"
-alias em="emacsclient -t -nw"
+alias shellplus="python manage.py shell_plus"
+
+# Mem. processes
+alias mempro="ps -u arturo -o rss,comm"
 
 # Displaying git branch inside prompt
 function parse_git_branch {
@@ -15,16 +50,11 @@ function proml {
   local       GREEN="\[\033[0;32m\]"
   local       WHITE="\[\033[0;37m\]"
 
-   PS1="[\u@\h \w$GREEN\$(parse_git_branch)]$WHITE\$ "
-   PS2='> '
-   PS4='+ '
+PS1="[\u@\h \w$GREEN\$(parse_git_branch)]$WHITE\$ "
+PS2='> '
+PS4='+ '
 }
 proml
-
-# Django completion
-if [ -f $HOME/scripts/django_bash_completion.sh ]; then
-    $HOME/scripts/django_bash_completion.sh
-fi
 
 # virtualenv and virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
@@ -32,5 +62,3 @@ source /usr/bin/virtualenvwrapper.sh
 
 # auto-completion for git commands
 source /usr/share/doc/git-1.7.5.1/contrib/completion/git-completion.bash
-
-stty -ixoff -ixon
