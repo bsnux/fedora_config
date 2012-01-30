@@ -62,3 +62,6 @@ source /usr/bin/virtualenvwrapper.sh
 
 # auto-completion for git commands
 source /usr/share/doc/git-1.7.5.1/contrib/completion/git-completion.bash
+
+# Ruby Version Manager: Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
