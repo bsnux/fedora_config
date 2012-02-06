@@ -1,0 +1,27 @@
+--- us	2012-02-06 08:46:33.066803331 +0100
++++ us.original	2012-02-06 08:46:35.066778327 +0100
+@@ -80,13 +80,13 @@
+     include "us(basic)"
+ 
+     // Alphanumeric section
+-    key <TLDE> { [grave, tilde,         dead_grave,       asciitilde ] };
++    key <TLDE> { [dead_grave, dead_tilde,         grave,       asciitilde ] };
+     key <AE01> { [	   1,     exclam,    exclamdown,      onesuperior ] };
+     key <AE02> { [	   2,         at,   twosuperior, dead_doubleacute ] };
+     key <AE03> { [	   3, numbersign, threesuperior,      dead_macron ] };
+     key <AE04> { [	   4,     dollar,      currency,         sterling ] };
+     key <AE05> { [	   5,    percent,      EuroSign,     dead_cedilla ] };
+-    key <AE06> { [    6, circumflex,    onequarter,      asciicircum ] };
++    key <AE06> { [    6, dead_circumflex,    onequarter,      asciicircum ] };
+     key <AE07> { [	   7,  ampersand,       onehalf,	dead_horn ] };
+     key <AE08> { [	   8,   asterisk, threequarters,      dead_ogonek ] };
+     key <AE09> { [	   9,  parenleft, leftsinglequotemark, dead_breve ] };
+@@ -118,7 +118,7 @@
+ 
+     key <AC09> { [	   l,          L,        oslash,         Ooblique ] };
+     key <AC10> { [ semicolon,      colon,     paragraph,           degree ] };
+-    key <AC11> { [ aposthrophe, quotedbl, dead_diaeresis, dead_acute ] };
++    key <AC11> { [dead_acute, dead_diaeresis, apostrophe,        quotedbl ] };
+ 
+     key <AB01> { [	   z,          Z,            ae,               AE ] };
+     key <AB02> { [	   x,          X,             x,                X ] };
