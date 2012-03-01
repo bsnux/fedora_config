@@ -65,3 +65,7 @@ source /usr/share/doc/git/contrib/completion/git-completion.bash
 
 # Ruby Version Manager: Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Setting locales
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
