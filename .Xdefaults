@@ -65,7 +65,7 @@ URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=13:antialias=true:hinting=tr
 #   alias ls="ls -h --color=auto"
 URxvt*color4: RoyalBlue
 URxvt*color12: RoyalBlue
-URxvt*color1: RoyalRed
+URxvt*color1: Pink
 
 # scrollbar - true (default) or false
 URxvt*scrollBar: true
