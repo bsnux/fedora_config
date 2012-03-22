@@ -1,7 +1,7 @@
 Personal configuration files
 ==============================
 
-A set of my configuration files, very useful for all my computers.
+A set of my configuration files, very useful for all my computers using [Fedora Linux](http://fedoraproject.org)
 
 This directory contains subdirectories and files that should be inside my *home* directory. It could be useful to create *symlinks* to them.
 

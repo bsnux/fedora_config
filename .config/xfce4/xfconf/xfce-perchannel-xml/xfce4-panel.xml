@@ -25,8 +25,14 @@
     <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="empathy"/>
+        <value type="string" value="kupfer.py"/>
         <value type="string" value="networkmanager applet"/>
+        <value type="string" value="seapplet"/>
         <value type="string" value="dropbox"/>
+        <value type="string" value="abrt-applet"/>
+        <value type="string" value="scp-dbus-service.py"/>
       </property>
     </property>
     <property name="plugin-15" type="string" value="xfce4-mixer-plugin"/>

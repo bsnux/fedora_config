@@ -27,3 +27,16 @@ vbell off
 # Redefining command key to Ctrl-o
 escape ^Oo
 
+screen -U -t work       0
+
+chdir /home/arturo/dev/comunidad
+screen -U -t runserver  1
+
+screen -U -t shell_plus 2
+
+screen -U -t db         3
+
+chdir /home/arturo
+screen -U -t staging    4       ssh marca
+
+select 0
