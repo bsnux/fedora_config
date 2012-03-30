@@ -1,20 +1,27 @@
+"-------------------------------
+"   bsnux configuration for Vim
+"-------------------------------
+
+" Basic configuration
 set nu
-syntax enable 
-set encoding=utf-8
-set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
+set nobackup
+syntax on
 
-"" Whitespace
-set nowrap                      " don't wrap lines
-set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
-set expandtab                   " use spaces, not tabs (optional)
-set backspace=indent,eol,start  " backspace through everything in insert mode
+" Indentation
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
-"" Searching
-set hlsearch                    " highlight matches
-set incsearch                   " incremental searching
-set ignorecase                  " searches are case insensitive...
-set smartcase                   " ... unless they contain at least one capital letter
+" Lusty-explorer requires this
+set hidden
 
-"" Colors
-colorscheme wombat
+" Activating ftplugins
+filetype plugin on
+
+" Color
+"colorscheme wombat
+"colorscheme railscasts
+colorschem darktango
+
+" Loading custom functions
+source ~/.vim/custom/whitespace.vim
