@@ -23,5 +23,9 @@ filetype plugin on
 "colorscheme railscasts
 colorschem darktango
 
+" Django snippets for Python and HTML files
+autocmd FileType python set ft=python.django
+autocmd FileType html set ft=htmldjango.html
+
 " Loading custom functions
 source ~/.vim/custom/whitespace.vim
