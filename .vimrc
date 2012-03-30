@@ -23,6 +23,10 @@ filetype plugin on
 "colorscheme railscasts
 colorschem darktango
 
+" Auto closing chars
+imap ( ()<left>
+imap { {}<left>
+
 " Django snippets for Python and HTML files
 autocmd FileType python set ft=python.django
 autocmd FileType html set ft=htmldjango.html
