@@ -37,6 +37,7 @@ alias eg='emacs --geometry=120x64'
 # Django
 alias rr="python manage.py runserver"
 alias shellplus="python manage.py shell_plus"
+alias dbshell="python manage.py db_shell"
 
 # Mem. processes
 alias mempro="ps -u arturo -o rss,comm"
